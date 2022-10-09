@@ -1,0 +1,12 @@
+# dependencies frontend
+frontend/.env
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# dependencies backend
+backend/.venv/
+backend/__pycache__/
+backend/.env

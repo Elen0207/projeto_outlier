@@ -1,0 +1,21 @@
+CREATE DATABASE tcc_outlier;
+
+CREATE TABLE tab_historic(
+  id int NOT NULL AUTO_INCREMENT, 
+  criado datetime NOT NULL, 
+  outlier boolean NOT NULL,
+  usuario int NOT NULL, 
+  nome_arquivo varchar(100) NOT NULL, 
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE tab_users(
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(150) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  senha VARCHAR(50) NOT NULL,
+  departamento VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE INDEX id_UNIQUE (id ASC) VISIBLE,
+  UNIQUE INDEX email_UNIQUE (email ASC) VISIBLE
+);
